@@ -54,6 +54,7 @@ Meridian is designed to run as a containerized control plane service.
 
 Typical deployment architecture:
 
+```
 User / API Client
       │
       ▼
@@ -87,6 +88,7 @@ Meridian API (FastAPI)
       └── Structured Logging
             • JSON telemetry on every request
             • Per-stage timing (t_retrieve_ms, t_generate_ms, t_total_ms)
+```
 
 Infrastructure is provisioned using Terraform and deployed through CI/CD pipelines.
 ---
